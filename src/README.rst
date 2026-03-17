@@ -6,7 +6,7 @@ Pyarmor is a command line tool used to obfuscate python scripts, bind obfuscated
 Key Features
 ------------
 
-* The obfuscated scritpt is still a normal `.py` script, in most of cases the original python scripts can be replaced with obfuscated scripts seamlessly.
+* The obfuscated script is still a normal `.py` script, in most of cases the original python scripts can be replaced with obfuscated scripts seamlessly.
 * Provide many ways to obfuscate the scripts to balance security and performance
 * Rename functions/methods/classes/variables/arguments, irreversible obfuscation
 * Convert part of Python functions to C function, compile to binary by high optimize option, irreversible obfuscation
