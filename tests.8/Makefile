@@ -22,8 +22,8 @@ ifeq ($(findstring Linux,$(UNAME)),Linux)
 else ifeq ($(findstring Darwin,$(UNAME)),Darwin)
     ifeq ($(ARCH),arm64)
         HOST ?= darwin.arm64
-	PYVERS := 3.9 3.10
-	PYTHONBIN := /usr/local/bin/pythonXY
+	PYVERS := 3.9 3.10 3.11 3.12 3.13 3.14 3.15
+	PYTHONBIN := /Users/zhaojunde/workspace/v9-test/venv/XY/bin/pythonXY
     else
 	HOST ?= darwin.x86_64
 	PYVERS := ${ALL_PYVERS}
