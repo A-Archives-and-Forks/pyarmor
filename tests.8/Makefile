@@ -12,8 +12,8 @@ ifeq ($(findstring Linux,$(UNAME)),Linux)
 	PYTHONBIN := /usr/local/bin/pythonXY
     else ifeq ($(ARCH),aarch64)
         HOST ?= linux.aarch64
-	PYVERS := 3.10
-	PYTHONBIN := /usr/local/bin/pythonXY
+	PYVERS := 3.9 3.10 3.11 3.12 3.13 3.14 3.15
+	PYTHONBIN := /usr/bin/pythonXY
     else
         HOST ?= linux.x86
 	PYVERS := ${ALL_PYVERS}
