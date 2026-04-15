@@ -71,6 +71,9 @@ accessing or in any other way using Pyarmor - referred to as "user" or
 1.16 "Licensed Product"
     means product has been registered to one Pyarmor License.
 
+1.17 "CI License"
+    means a kind of Pyarmor License
+
 2. License Grants and Conditions
 --------------------------------
 
@@ -97,11 +100,12 @@ but there are some limitations.
 
 User purchases Pyarmor License to unlock these limitations except 2.1.5.
 
-Licensor issues 3 kind of Pyarmor License.
+Licensor issues 4 kind of Pyarmor License.
 
 2.2.1 Pyarmor Basic, unlock limitations 2.1.1, 2.1.2, 2.1.4
 2.2.2 Pyarmor Pro, unlock limitations 2.1.1, 2.1.2, 2.1.3, 2.1.4
 2.2.3 Pyarmor Group, unlock limitations 2.1.1, 2.1.2, 2.1.3, 2.1.4
+2.2.4 Pyrmor CI, unlock limitations 2.1.1, 2.1.2, 2.1.3, 2.1.4
 
 Pyarmor Basic and Pyarmor Pro need internet connection to verify, it doesn't
 work in the device without internet connection.
@@ -110,7 +114,13 @@ Pyarmor Pro can not be used in CI/CD pipeline.
 
 Pyarmor Group need not internet connection.
 
-Each Pyarmor License only need pay once, not periodically.
+Pyarmor CI can only be used in CI/CD pipeline or docker container.
+
+Pyarmor Basic, Pro and Group only need pay once, not periodically.
+
+Pyarmor CI will be expired after one year since purchased date,
+licensor won't charge user automatically, but send new invoice to user
+before the expiration date to get paid.
 
 2.3 Conditions
 
