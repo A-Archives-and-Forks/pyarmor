@@ -73,7 +73,7 @@ There is an extra Python package :file:`pyarmor_runtime_000000`, which is requir
 Distributing the obfuscated script
 ----------------------------------
 
-Only copy :file:`dist/foo.py` to another machine doesn't work, instead copy all the files in the :file:`dist/`.
+Only copying :file:`dist/foo.py` to another machine will not work. Instead, copy all the files in the :file:`dist/`.
 
 Why? It's clear after checking the content of :file:`dist/foo.py`:
 
@@ -82,7 +82,7 @@ Why? It's clear after checking the content of :file:`dist/foo.py`:
     from pyarmor_runtime_000000 import __pyarmor__
     __pyarmor__(__name__, __file__, ...)
 
-Actually the obfuscated script can be taken as normal Python script with dependent package :mod:`pyarmor_runtime_000000`, use it as it's not obfuscated.
+The obfuscated script can be taken as a normal Python script with dependent package :mod:`pyarmor_runtime_000000`, use it as it's not obfuscated.
 
 .. important::
 
