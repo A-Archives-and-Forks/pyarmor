@@ -95,8 +95,11 @@ Building Errors
        If not return this, but raises exception, it's firewall problem, please configure it to allow Python interpreter to visit `pyarmor.dashingsoft.com:80`
    * - invalid activation file
      - Make sure it's the attachment of activation email which title likes `[Pyarmor] License Activation Code`
-       Make sure it's not changed by your email server, it should be same as the email content which starts with `Dear ...` and includes the activation code in one line (it's important there should no line break in the activation code).
-
+       Make sure it's not interpolated by your email server, it should be same as the email content which starts with `Dear ...` and includes the activation code in one line (it's important there should no line break in the activation code).
+       When you save the attacment, make sure its encoding is ascii.
+   * - HTTP Error 400 - no shipping information
+     - Generally something tamper with the activation code sent by Pyarmor Team. Maybe the email client, maybe some auto-fix typos tools or anti-virus tools touch the email content.
+       Try to check the original email from web portal in the web-browser to verify the activation code.
 
 Runtime Errors
 ==============
