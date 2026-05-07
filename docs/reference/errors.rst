@@ -98,11 +98,12 @@ Building Errors
 
        Make sure it's not interpolated by email server or email client.
 
+       Make sure its encoding is utf-8.
+
        It should be same as the email content which starts with `Dear ...`
 
        It should include the activation code in one line (it's important there should no line break in the activation code).
 
-       When you save the attacment, make sure its encoding is ascii.
    * - HTTP Error 400 - no shipping information
      - Generally something tamper with the activation code sent by Pyarmor Team.
 
