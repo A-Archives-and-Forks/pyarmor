@@ -791,6 +791,7 @@ class WebRegister(Register):
             f.writestr('license.lic', licdata)
             f.writestr('.pyarmor_capsule.zip', capsule)
             f.writestr('group.tokens', b'')
+            f.writestr('dev.info', b'%s,%s' % (devid, machid))
             f.writestr('tokens/' + machid, data)
 
         logger.info('please copy deivce regfile to offline device and run')
