@@ -621,6 +621,8 @@ class WebRegister(Register):
         return info, '\n'.join(lines)
 
     def upgrade_to_pro(self, keyfile, product):
+        raise CliError('this feature is not available now')
+
         logger.info('process upgrading file "%s"', keyfile)
         reginfo = self.parse_keyfile(keyfile)
 
