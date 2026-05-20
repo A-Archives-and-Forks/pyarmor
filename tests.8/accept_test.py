@@ -387,6 +387,13 @@ class UnitTestCases(BaseTestCase):
             'hello bob',
         ]]))
 
+    @only_protest
+    def test_bcc_with_nest_functions(self):
+        args = ['g', '--enable-bcc', 'samples/nest.py']
+        self.pyarmor_gen(args)
+        rc, stdout, stderr = self.assert_python_ok('dist/nest.py')
+        self.assertIn(b'test nest OK', stdout)
+
 
 if __name__ == '__main__':
     logging.getLogger().addHandler(logging.NullHandler())
