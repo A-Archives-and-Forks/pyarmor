@@ -2,7 +2,11 @@
 #
 # Build source and wheel distribute
 #
-
+# If need new build with same patch version, pass BUILD_NUMBER in command line
+# For example,
+#
+#   $ BUILD_NUMBER="--build-number 2" bash scripts/build_package.sh
+#
 PLATFORMS="win32 win_amd64 manylinux1_x86_64 macosx_10_11_x86_64 macosx_10_11_intel"
 
 PYTHON=C:/Python34/python
@@ -45,11 +49,11 @@ cd ~/workspace/pyarmor
 make_platform_files
 
 # Build source
-$PYTHON setup.py sdist --formats=zip,bztar,gztar
+$PYTHON setup.py sdist --formats=gztar
 clear_build
 
 # Build universal wheel
-$PYTHON setup.py bdist_wheel --python-tag=py3
+$PYTHON setup.py bdist_wheel --python-tag=py3 ${BUILD_NUMBER}
 clear_build
 
 clear_platform_files
